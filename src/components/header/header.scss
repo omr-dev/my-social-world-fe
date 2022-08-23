@@ -1,0 +1,40 @@
+.header-wrapper {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e5e5;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  .header {
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .search {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background-color: #efefef;
+      border-radius: 8px;
+      height: 30px;
+      .search-icon {
+        margin-left: 8px;
+        font-size: 20px;
+      }
+      input {
+        border: none;
+        background-color: transparent;
+        outline: none;
+      }
+    }
+    .header-links {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      .icon {
+        height: 28px;
+        width: 28px;
+      }
+    }
+  }
+}
