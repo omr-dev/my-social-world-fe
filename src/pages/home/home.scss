@@ -1,0 +1,16 @@
+.home-page {
+  margin: 88px 0;
+  display: flex;
+
+  .home-page-left {
+    flex: 3;
+    .posts {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+    }
+  }
+  .home-page-right {
+    flex: 2;
+  }
+}
