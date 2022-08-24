@@ -1,0 +1,61 @@
+.right-box {
+  padding: 0 14px;
+  position: fixed;
+  .account {
+    display: flex;
+    align-items: center;
+    .account-titles a {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-left: 14px;
+      font-weight: 600;
+      font-size: 14px;
+      span {
+        color: #ccc;
+        font-weight: 400;
+      }
+    }
+  }
+  .friends-title {
+    display: flex;
+    margin: 12px 0 8px 0;
+    font-size: 14px;
+    color: #ccc;
+    font-weight: 700;
+  }
+  .friends-list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    .friend-item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .friend-item-left {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .friend-user-name {
+          display: flex;
+          flex-direction: column;
+          margin-left: 8px;
+          a {
+            font-size: 14px;
+            font-weight: 600;
+          }
+          span {
+            font-size: 12px;
+            color: #ccc;
+          }
+        }
+      }
+      .friend-item-right {
+        margin-left: 6pc;
+        @media (max-width: 999px) {
+          margin-left: 2pc;
+        }
+      }
+    }
+  }
+}
