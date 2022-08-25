@@ -21,11 +21,12 @@
         background-color: transparent;
       }
     }
-    .post-image {
-      display: flex;
-      img {
-        object-fit: cover;
-      }
+    
+  }
+  .post-image {
+    display: flex;
+    img {
+      object-fit: cover;
     }
   }
   .post-bottom {

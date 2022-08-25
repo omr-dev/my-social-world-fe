@@ -1,0 +1,116 @@
+.profile-page {
+  margin: 88px 0;
+  .profile-head {
+    display: flex;
+    justify-content: space-between;
+    .head-left {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+    }
+    .head-right {
+      flex: 2;
+      display: flex;
+      flex-direction: column;
+
+      .head-right-top {
+        display: flex;
+        column-gap: 20px;
+        align-items: center;
+        .profile-username {
+          font-size: 28px;
+        }
+        .right-top-buttons {
+          display: flex;
+          column-gap: 10px;
+          align-items: center;
+          button:not(.edit-button) {
+            background-color: transparent;
+          }
+        }
+      }
+      .head-right-center {
+        display: flex;
+
+        column-gap: 40px;
+        margin: 24px 0 20px 0;
+        div {
+          display: flex;
+          column-gap: 4px;
+        }
+      }
+    }
+  }
+
+  /*PROFILE BODY*/
+  .profile-body {
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+
+    /*! nav tabs!*/
+    .profile-nav-tabs {
+      display: flex;
+      width: 50%;
+      margin: auto;
+      justify-content: space-between;
+
+      button {
+        align-items: center;
+        display: flex;
+        column-gap: 8px;
+        font-size: 12px;
+        letter-spacing: 2px;
+        position: relative;
+        &.active:after {
+          content: "";
+          background-color: #000;
+          width: 100%;
+          height: 1px;
+          position: absolute;
+
+          top: -10px;
+        }
+      }
+    }
+    /*! posts grid !*/
+    .profile-posts-grid {
+      margin-top: 20px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 20px;
+      .grid-post {
+        position: relative;
+
+        max-width: 310px;
+        img {
+          height: 300px;
+        }
+        &:hover {
+          .like-icon-wrapper {
+            opacity: 1;
+            backdrop-filter: blur(10px);
+          }
+        }
+
+        .like-icon-wrapper {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+
+          display: flex;
+          align-items: center;
+          opacity: 0;
+          transition: opacity 0.2s ease;
+
+          .like-icon {
+            color: red;
+          }
+          b {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}
