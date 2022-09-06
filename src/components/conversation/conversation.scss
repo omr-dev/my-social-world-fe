@@ -1,0 +1,9 @@
+.conversation{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    margin-top: 20px;
+    .conversation-name{
+        font-weight: 500;
+    }
+}

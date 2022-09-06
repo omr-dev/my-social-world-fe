@@ -1,0 +1,25 @@
+.chat-online-user {
+  .user {
+    display: flex;
+    column-gap: 5px;
+    align-items: center;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    .img-container {
+      position: relative;
+      .online-badge {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: limegreen;
+        position: absolute;
+        right: 0;
+        bottom: 2px;
+      }
+    }
+    .user-name{
+      
+    }
+  }
+}
